@@ -1,0 +1,122 @@
+/*importing from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+}
+
+/*creating the color variables */
+:root {
+    --bg: gray;
+}
+
+/* need to set html and body also to height 100% */
+/* and remove the body margin (ie. white space around page content) */
+#mainlayout, html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#mainlayout {
+    display: flex;
+    flex-direction: column;
+}
+
+#topbar {
+    flex: 1 1 auto;
+    background-color: var(--bg);
+}
+
+#computerbox {
+    height: 720px;;
+    display: flex;
+}
+
+#bottombar {
+    flex: 1 1 auto;
+    background-color: var(--bg);
+}
+
+/* COMPUTER LAYOUT HORINZONTAL BAR */
+
+.padding {
+    flex: 1 1 auto;
+    background-color: var(--bg);
+}
+
+#computer {
+    width: 600px;
+}
+
+#topBezel {
+    height: 80px;
+    background-color: var(--bg);
+}
+
+#bottomBezel {
+    height: 320px;
+    background-color: var(--bg);
+}
+
+#monitor {
+    height: 320px;
+    display: flex;
+}
+
+.sideBezel {
+    width: 80px;
+    background-color: var(--bg);
+}
+
+#compScreen {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#commandLine {
+    height: 70px;
+    text-align: center;
+    padding-top: 45px;
+    color: rgb(70, 70, 70);
+}
+
+#statusLine {
+    height: 40px;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+#score {
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(70, 70, 70);
+}
+
+.buttonBox {
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border-width: 2px 0px;
+    border-style: dashed;
+    border-color: rgb(70, 70, 70);
+
+}.resetBox {
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.selectBut, #resetBut {
+    border-radius: 0px;
+    border-width: 2px;
+    border-color:  rgb(100, 100, 100);
+    color:  rgb(50, 50, 50);
+}
+
+

@@ -5,21 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = 'commandsBox'>
-        <p id="commandLine">commands go here</p>
-        <p id = "statusLine">...</p>
-        <p id="score">Player Score: 0 ||| Robot Score: 0</p>
-    </div>
-    
-    <div class = 'buttonBox'>
-        <button id="rockBut" class = 'selectBut'>rock</button>
-        <button id="paperBut" class = 'selectBut'>paper</button>
-        <button id="scissorsBut" class = 'selectBut'>scissors</button>
-    </div>
-    <div class = 'resetBox'>
-        <button id="resetBut">Play again?</button>
+    <div id="mainlayout">
+        <div id="topbar"></div>
+        <div id="computerbox">
+
+            
+            <div class="padding"></div>
+            <div id="computer">
+                <div id="topBezel">
+                    <object data="img/top_bezel.svg" width="600" height="80"></object>
+                </div>
+
+                <div id="monitor">
+                    <div class="sideBezel">
+                        <object data="img/side_bezels.svg" width="80" height="320"></object>
+                    </div>
+
+                    <div id="compScreen">
+                        <div id="commandLine">commands go here</div>
+                        <div id = "statusLine">...</div>
+                        <div id="score">Player Score: 0 ||| Robot Score: 0</div>
+                        <div class = 'buttonBox'>
+                            <button id="rockBut" class = 'selectBut'>rock</button>
+                            <button id="paperBut" class = 'selectBut'>paper</button>
+                            <button id="scissorsBut" class = 'selectBut'>scissors</button>
+                        </div>
+                        <div class = 'resetBox'>
+                            <button id="resetBut">Play again?</button>
+                        </div>
+                    </div>
+
+                    <div class="sideBezel">
+                        <object data="img/side_bezels.svg" width="80" height="320"></object>
+                    </div>
+                </div>
+
+                <div id="bottomBezel">
+                    <object id = "botBezSVG" data="img/bottom_bezel.svg" width="600" height="320"></object>
+                </div>
+            </div>
+            <div class="padding"></div>
+
+
+        </div>
+
+        <div id="bottombar"></div>
+        
     </div>
 
 

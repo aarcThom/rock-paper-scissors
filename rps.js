@@ -3,7 +3,7 @@ function getPlayerChoice() {
 
     if (!playerChoice){
             waitMsg(waitInterval, itmChoiceMessage, 200, 0);
-    commandLine.textContent = 'What will you choose? Rock, paper, or scissors?';
+    commandLine.textContent = 'Choose Rock, paper, or scissors.';
     }
 }
 
@@ -19,7 +19,7 @@ function robotChoice() {
 
     let rbtWaitMsg = ['...', 'Calculating robot choice'];
     waitMsg(waitInterval, rbtWaitMsg, 2, 0);
-    waitMsgs.push(setTimeout(() => commandLine.textContent = `You chose ${playerChoice}, and the robot chose ${robotChoice}!`, waitInterval * 3));
+    waitMsgs.push(setTimeout(() => commandLine.textContent = `You chose ${playerChoice}, & the robot chose ${robotChoice}!`, waitInterval * 3));
     waitMsg(waitInterval, ['...', 'Calculating result', '...', outcome], 1, waitInterval * 4);
     waitMsgs.push(setTimeout(() => scoreLine.textContent = `Player Score: ${score[0]} ||| Robot Score: ${score[1]}`, waitInterval * 5));
     waitMsgs.push(setTimeout(() => statusLine.textContent = '...', waitInterval * 6));
@@ -64,19 +64,19 @@ function calcWinner(pChoice, rChoice) {
                 return'Rock beats scissors! You rock!';
             case 'scissorspaper':
                 score[0] += 1;
-                return 'Scissors beats paper! You\'re a cut above the rest!';
+                return 'Scissors beats paper! You\'re sharp!';
             case 'paperrock':
                 score[0] += 1;
-                return 'Paper beats rock! You beat the robot to a pulp!';
+                return 'Paper beats rock! You won\'t fold!';
             case 'scissorsrock':
                 score[1] += 1;
                 return 'Rock beats scissors! The robot rocked you!';
             case 'paperscissors':
                 score[1] += 1;
-                return 'Scissors beats paper! The robot cut you down to size!';
+                return 'Scissors > paper! The robot cut you down!';
             case 'rockpaper':
                 score[1] += 1;
-                return 'Paper beats rock! The robot beat you to a pulp!';
+                return 'Paper > rock! You are beaten to a pulp!';
         }
     }
 }
